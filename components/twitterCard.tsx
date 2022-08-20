@@ -21,6 +21,8 @@ const TwitterCard = ({
         <a
           href={`https://twitter.com/${username}`}
           className='italic dark:hover:text-indigo-200 hover:text-indigo-300 transition duration-200 text-sm px-4'
+          target='_blank'
+          rel='noreferrer'
         >
           @{username}
         </a>

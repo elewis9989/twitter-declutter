@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import CoffeeBtn from '../components/coffeeBtn';
 import Form from '../components/form';
 import Toggle from '../components/toggle';
+import { FaTwitterSquare, FaGlobe, FaGithub } from 'react-icons/fa';
 
 const Home: NextPage = () => {
   return (
@@ -24,15 +26,45 @@ const Home: NextPage = () => {
         <Form />
       </main>
 
-      <footer className='flex flex-[1] py-8 px-0 border-t border-[#eaeaea] justify-center items-center'>
+      <footer className='lg:inline-grid lg:grid-cols-3 flex flex-col w-full py-8 mx-auto border-t border-[#eaeaea] items-center'>
+        <div></div>
         <a
           href='aroze.xyz'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex justify-center items-center flex-grow'
+          className='lg:justify-self-center lg:py-0 pb-3'
         >
           Created by roze 🌹
         </a>
+        <div className='inline-flex items-center justify-center lg:py-0 pt-3'>
+          <a
+            href='https://aroze.xyz/'
+            className='text-xl px-2 dark:hover:text-indigo-200 hover:text-indigo-300 transition duration-200'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FaGlobe />
+          </a>
+          <a
+            href='https://twitter.com/emotionldaffodl'
+            className='text-xl px-2 dark:hover:text-indigo-200 hover:text-indigo-300 transition duration-200'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FaTwitterSquare />
+          </a>
+          <a
+            href='https://github.com/elewis9989'
+            className='text-xl px-2 dark:hover:text-indigo-200 hover:text-indigo-300 transition duration-200'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FaGithub />
+          </a>
+          <div className='px-4'>
+            <CoffeeBtn />
+          </div>
+        </div>
       </footer>
     </div>
   );

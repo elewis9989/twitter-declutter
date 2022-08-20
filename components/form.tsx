@@ -44,11 +44,14 @@ const Form = () => {
   const usersToDisplay = data.slice(0, 5);
   return (
     <div className='flex flex-col items-center justify-center'>
-      <div className='h-44 w-fit rounded-md bg-gray-50 overflow-auto my-4'>
+      <div className='h-44 w-fit sm:min-w-[31rem] rounded-md bg-gray-50 dark:bg-gray-700 overflow-auto my-4'>
+        <h3 className='flex items-center justify-center font-semibold text-lg py-2'>
+          Your Top 5
+        </h3>
         <ul>
           {usersToDisplay &&
             usersToDisplay.map((user, index) => (
-              <li key={index} className='px-6 py-2'>
+              <li key={index} className='sm:px-6 px-2 py-2'>
                 <TwitterCard
                   name={user.name}
                   username={user.username}

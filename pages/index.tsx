@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       <footer className='lg:inline-grid lg:grid-cols-3 flex flex-col w-full py-8 mx-auto border-t border-[#eaeaea] items-center'>
         <div></div>
         <a
-          href='aroze.xyz'
+          href='https://aroze.xyz'
           target='_blank'
           rel='noopener noreferrer'
           className='lg:justify-self-center lg:py-0 pb-3'
